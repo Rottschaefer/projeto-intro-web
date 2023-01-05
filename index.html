@@ -8,12 +8,15 @@
     <title>Comidas do Rott</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<div class="total">
     <header>
         <h1>Comidas do Rott</h1>
     </header>
+    <!-- <img src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="back"> -->
     <main>
         <div id="buscador">
             <form action="">
@@ -22,8 +25,9 @@
                 <button><b>Buscar</b></button>
             </form>
         </div>
-        <div>
-            <section>
+        <div class="comidas">
+            <section class="strogonoff-section">
+                <img class="strogonoff-img" src="https://www.unileverfoodsolutions.com.br/dam/global-ufs/mcos/SLA/calcmenu/recipes/BR-recipes/chicken-&-other-poultry-dishes/strogonoff-de-frango/main-header.jpg" alt="">
                 <ul>
                     <li>Nome: <a href="https://www.tudogostoso.com.br/receita/2462-strogonoff-de-frango.html" target="_blank"> Strogonoff</a></li>
                     <li>Custo de ingredientes: 50</li>
@@ -31,7 +35,8 @@
                     <li>Ingredientes: Creme de Leite, Frango, Batata Palha</li>
                 </ul>
             </section>
-            <section>
+            <section class="bolodechocolate-section">
+                <img src="https://s2.glbimg.com/wJmq1MqeOZZ-VSLlDxRLdL2zj60=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/1/N/aQD0fhQs2qW7qlFw0bTA/bolo-de-chocolate-facil.jpg" alt="" class="bolodechocolate-img">
                 <ul>
                     <li>Nome: <a href="https://www.tudogostoso.com.br/receita/62547-a-melhor-receita-de-bolo-de-chocolate.html" target="_blank">Bolo de chocolate</a></li>
                     <li>Custo de ingredientes: 15</li>
@@ -39,7 +44,8 @@
                     <li>Ingredientes: Leite, Ovos, Chocolate</li>
                 </ul>
             </section>
-            <section id="last">
+            <section class="bolodebanana-section">
+                <img src="https://receitasculinarias.app.br/wp-content/uploads/2022/03/8835fed4de3847a26822c5cc338a0cab_XL.jpg" alt="" class="bolodebanana-img">
                 <ul>
                     <li>Nome: <a href="https://www.tudogostoso.com.br/receita/119737-bolo-de-banana-rapido-de-liquidificador.html" target="_blank">Bolo de banana</a></li>
                     <li>Custo de ingredientes: 20</li>
@@ -50,6 +56,8 @@
         </div>
     </main>
     <footer><h4>Contato: Rottschaefer <a href="https://github.com/Rottschaefer" target="_blank">GitHub</a>    <a href="https://www.instagram.com/finrott/" target="_blank">@finrott</a></h4></footer>
+</div>
+    
 </body>
 
 </html>
