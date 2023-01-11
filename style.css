@@ -14,7 +14,7 @@
 
 
 .opções{
-    padding-left: 7rem;
+    padding-left: 5rem;
     display: flex;
     justify-self: flex-end;
     justify-content: space-between;
@@ -192,7 +192,7 @@ footer{
     display: none;
 }
 
-@media screen and (max-device-width:1316px){
+@media screen and (max-device-width:1200px){
 
     main{
         align-items: center;
