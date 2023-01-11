@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tesouro Direto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="total">
+        <header>
+            <img class="logo"
+                src="https://www.tesourodireto.com.br/lumis-theme/br/com/b3/tesourodireto/theme/b3-tesouro-direto/img/td-logo.svg"
+                alt="">
+            <div class="opções">
+                <p>Como investir</p>
+                <p>Conheça</p>
+                <p>Títulos</p>
+                <p>Simulador</p>
+                <p>Central de Atendimento</p>
+                <p>Notícias</p>
+                <p>Blog</p>
+            </div>
+            <div class="buscador">
+                <img src="./lupa projeto tesouro.jpg" id="lupa" alt="">
+                <label for="search"></label>
+                <input onkeydown="buscar()" onkeyup="buscar()" value="" placeholder="Procure seu título" type="search"
+                    id="search">
+            </div>
+
+            <!-- <div class="buscador"></div> -->
+        </header>
+        <main>
+            <p class="precard">OPÇÕES DE TÍTULOS</p>
+            <div class="titulos">
+                <div class="card" id="cardprefixado">
+                    <div class="style" id="styleprefixado">
+                        <div class="bloco" id="blocolateralprefixado"></div>
+                        <div id="nome_ano">
+                            <p class="cardtitulo" id="tituloprefixado">TESOURO PREFIXADO</p>
+                            <p class="ano" id="anoprefixado"></p>
+                        </div>
+                    </div>
+                    <div class="valores" id="valoresprefixado">
+                        <p>Rentabilidade anual: </p>
+                        <p>Investimento mínimo:</p>
+                        <p>Vencimento:</p>
+                    </div>
+                    <button class="simular">Simule o investimento</button>
+                </div>
+                <div class="card" id="cardipca">
+                    <div class="style" id="styleipca">
+                        <div class="bloco" id="blocolateralipca"></div>
+                        <div id="nome_ano">
+                            <p class="cardtitulo" id="tituloipca">TESOURO IPCA+</p>
+                            <p class="ano" id="anoipca"></p>
+                        </div>
+                    </div>
+                    <div class="valores" id="valoresipca">
+                        <p>Rentabilidade anual: IPCA+</p>
+                        <p>Investimento mínimo:</p>
+                        <p>Vencimento:</p>
+                    </div>
+                    <button class="simular">Simule o investimento</button>
+
+                </div>
+                <div class="card" id="cardselic">
+                    <div class="style" id="styleselic">
+                        <div class="bloco" id="blocolateralselic"></div>
+                        <div id="nome_ano">
+                            <p class="cardtitulo" id="tituloselic">TESOURO SELIC</p>
+                            <p class="ano" id="anoselic"></p>
+                        </div>
+                    </div>
+                    <div class="valores" id="valoresselic">
+                        <p>Rentabilidade anual: SELIC+</p>
+                        <p>Investimento mínimo:</p>
+                        <p>Vencimento:</p>
+                    </div>
+                    <button class="simular">Simule o investimento</button>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <img class="logoFinal"
+                src="https://www.tesourodireto.com.br/lumis-theme/br/com/b3/tesourodireto/theme/b3-tesouro-direto/img/td-logo-footer.png"
+                alt="">
+            <p id="assinatura">Feito por Rottschaefer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
