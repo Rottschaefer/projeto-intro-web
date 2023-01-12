@@ -62,10 +62,10 @@ console.log(document.querySelectorAll(".cardtitulo")[0].innerHTML.toLowerCase())
 const buscar = () => {
     for (let i = 0; i < document.getElementsByClassName("cardtitulo").length; i++) {
         console.log("tamo aq")
-        if (!document.querySelectorAll(".cardtitulo")[i].innerHTML.toLowerCase().includes(document.getElementById('search').value) && !document.querySelectorAll(".cardtitulo")[i].innerHTML.includes(document.getElementById('search').value)) {
+        if (!document.querySelectorAll(".cardtitulo")[i].innerHTML.toLowerCase().includes(document.getElementById('search').value.toLowerCase()) && !document.querySelectorAll(".cardtitulo")[i].innerHTML.includes(document.getElementById('search').value)) {
             document.querySelectorAll(".card")[i].classList.add("hide")
         }
-        else if (document.querySelectorAll(".cardtitulo")[i].innerHTML.includes(document.getElementById('search').value)) {
+        else if (document.querySelectorAll(".cardtitulo")[i].innerHTML.includes(document.getElementById('search').value.toLowerCase())) {
             document.querySelectorAll(".card")[i].classList.remove("hide")
         }
 
